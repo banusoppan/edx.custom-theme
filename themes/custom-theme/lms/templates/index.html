@@ -1,6 +1,7 @@
 <%page expression_filter="h"/>
 <%inherit file="main.html" />
 <%namespace name='static' file='static_content.html'/>
+<%namespace file='main.html' import="login_query"/>
 <%!
 from django.utils.translation import ugettext as _
 from django.urls import reverse
@@ -14,10 +15,10 @@ from openedx.core.djangolib.markup import HTML, Text
   % endif
 
 </head>
-<main id="main" aria-label="Content" tabindex="-1">
+<!--<main id="main" aria-label="Content" tabindex="-1">
     <section class="home">
       <header>
-        <!-- McDaniel Oct-2018: Ok, lets Bootstrap this page! -->
+        
         <div style="margin-bottom: 25px;" class="alert alert-success alert-dismissible fade show" role="alert">
           <h4 class="alert-heading">Well done!</h4>
           <p>You successfully added Bootstrap 4.0 to your homepage without breaking the LMS. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
@@ -56,7 +57,235 @@ from openedx.core.djangolib.markup import HTML, Text
       <%include file="${courses_list}" />
 
     </section>
-</main>
+</main>-->
+<section class="banner-section">
+  <div class="section-container">
+    <div class="banner-content">
+      <h4 class="banner-header">
+        Your Course to Success
+      </h4>
+      <h2 class="banner-name">
+        MASTERS
+      </h2>
+
+
+      <p class="banner-text">
+       Build skills with courses, certificates, and degrees online from world-class universities and companies
+      </p>
+      <div class="secondary">
+        <div class="mobile-nav-item hidden-mobile nav-item">
+          <a class="register-btn btn" href="/register${login_query()}">${_("Register")}</a>
+        </div>
+        <div class="mobile-nav-item hidden-mobile nav-item">
+          <a class="sign-in-btn btn" href="/login${login_query()}">${_("Sign in")}</a>
+        </div>
+      </div>
+        
+        
+        
+    </div>
+  </div>
+</section>
+<section class="about-section">
+  <div class="section-container">
+    <h2 class="about-title">ABOUT</h2>
+    <p class="title-para"><span class="highlight">WE CREATE</span> AWESOME STUFF</p>
+    <p class="about-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non nisi est sit amet. A iaculis at erat pellentesque adipiscing commodo elit.Leo urna molestie at elementum eu facilisis. Ut diam quam nulla porttitor massa. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="col-icon">
+          <i class="fas fa-lightbulb"></i>
+        </div>
+        <div class="col-content">
+          <h4>Web <span class="highlight">Development</span></h4>
+          <p>Praesent sodales, quam vitae gravida interdum, ex mi bibendum enim, sit amet tristique mi quam vel odio. Donec non nunc condimentum, hendrerit elit sed, condimentum magna. Suspendisse imperdiet purus vel ornare cursus.</p>
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="col-icon">
+          <i class="fas fa-lightbulb"></i>
+        </div>
+        <div class="col-content">
+          <h4>Web <span class="highlight">Development</span></h4>
+          <p>Praesent sodales, quam vitae gravida interdum, ex mi bibendum enim, sit amet tristique mi quam vel odio. Donec non nunc condimentum, hendrerit elit sed, condimentum magna. Suspendisse imperdiet purus vel ornare cursus.</p>
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="col-icon">
+          <i class="fas fa-lightbulb"></i>
+        </div>
+        <div class="col-content">
+          <h4>Web <span class="highlight">Development</span></h4>
+          <p>Praesent sodales, quam vitae gravida interdum, ex mi bibendum enim, sit amet tristique mi quam vel odio. Donec non nunc condimentum, hendrerit elit sed, condimentum magna. Suspendisse imperdiet purus vel ornare cursus.</p>
+
+        </div>
+      </div>
+    </div>
+    
+  <div>
+  
+</section>
+<section class="work-section">
+  <div class="section-container">
+    <div class="work-content">
+      <h3 class="work-title"><span class="highlight">HOW</span> WE WORK</h3>
+      <div class="row" style="justify-content: center ;color:#efefef">
+        <div class="col-md-6 col-md-offset-3">
+          <p class="text-center">Aliquam fermentum massa ac est sollicitudin, at ultricies ligula tristique. Cras finibus, nulla ac convallis feugiat, nisl nisl lobortis est, eget auctor velit magna vel nunc. Donec nec eros rhoncus.</p>
+        </div>
+
+      </div>
+      <div class="row icon-set">
+        <div class="col-md-3 text-center">
+          <p>
+            <i class="fas fa-eye circle scroll-in-animation background-20 heading player fadeInUp animated css-animation-show" data-animation="fadeInUp"></i>
+          </p>
+          <p class="title"><span class="underline-text">Awesome</span></p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <p>
+            <i class="fas fa-thumbs-up circle scroll-in-animation background-20 heading player fadeInUp animated css-animation-show" data-animation="fadeInUp"></i>
+          </p>
+          <p class="title"><span class="underline-text">Innovative</span></p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <p>
+            <i class="fas fa-paper-plane circle scroll-in-animation background-20 heading player fadeInUp animated css-animation-show" data-animation="fadeInUp"></i>
+          </p>
+          <p class="title"><span class="underline-text">Creative</span></p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <p>
+            <i class="fas fa-flask circle scroll-in-animation background-20 heading player fadeInUp animated css-animation-show" data-animation="fadeInUp"></i>
+          </p>
+          <p class="title"><span class="underline-text">Experimental</span></p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="team-section">
+  <div class="section-container">
+    <div class="team-content">
+      <h2 class="team-title">TEAM</h2>
+      <p class="title-para"><span class="highlight">WHO</span> WE ARE</p>
+      <p class="team-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non nisi est sit amet. A iaculis at erat pellentesque adipiscing commodo elit.Leo urna molestie at elementum eu facilisis. Ut diam quam nulla porttitor massa. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla.</p>
+      <div class="row">
+        <div class="col-md-3 col-sm-6  col-xs-6">
+          <div class="hover-overlay">
+            <img alt="Mike Johnson" src="images/our-team/1.jpg" title="Mike Johnson" class="fluid-width">
+            <div class="overlay background-90-b">
+              <div>
+                <p class="text-center text-uppercase heading-b">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="separator-small"></div>
+                <p class="text-center">
+                  <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook heading-b"></i></a>
+                  <a target="_blank" href="http://www.youtube.com/"><i class="fa fa-youtube heading-b"></i></a>
+                  <a target="_blank" href="https://github.com/"><i class="fa fa-github heading-b"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="caption">
+            <p>
+              <span class="title">Mike Johnson</span>
+              <br>
+              <span class="highlight">CEO &amp; Founder</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6  col-xs-6">
+          <div class="hover-overlay">
+            <img alt="Jessica Specter" src="images/our-team/2.jpg" title="Jessica Specter" class="fluid-width">
+            <div class="overlay background-90-b">
+              <div>
+                <p class="text-center text-uppercase heading-b">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="separator-small"></div>
+                <p class="text-center">
+                  <a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter heading-b"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin heading-b"></i></a>
+                  <a target="_blank" href="https://plus.google.com/"><i class="fa fa-google-plus heading-b"></i></a>
+                  <a target="_blank" href="https://vimeo.com/"><i class="fa fa-vimeo-square heading-b"></i></a>
+                  <a target="_blank" href="https://www.tumblr.com/"><i class="fa fa-tumblr heading-b"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="caption">
+            <p>
+              <span class="title">Jessica Specter</span>
+              <br>
+              <span class="highlight">Creative Director</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6  col-xs-6">
+          <div class="hover-overlay">
+            <img alt="Lynda Smith" src="images/our-team/3.jpg" title="Lynda Smith" class="fluid-width">
+            <div class="overlay background-90-b">
+              <div>
+                <p class="text-center text-uppercase heading-b">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <div class="separator-small"></div>
+                <p class="text-center">
+                  <a target="_blank" href="https://www.flickr.com/"><i class="fa fa-flickr heading-b"></i></a>
+                  <a target="_blank" href="https://www.dropbox.com/"><i class="fa fa-dropbox heading-b"></i></a>
+                  <a target="_blank" href="https://www.xing.com/"><i class="fa fa-xing heading-b"></i></a>
+                  <a target="_blank" href="http://vk.com/"><i class="fa fa-vk heading-b"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="caption">
+            <p>
+              <span class="title">Andrew Miles</span>
+              <br>
+              <span class="highlight">Developer</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6  col-xs-6">
+          <div class="hover-overlay">
+            <img alt="Lynda Smith" src="images/our-team/4.jpg" title="Lynda Smith" class="fluid-width">
+            <div class="overlay background-90-b">
+              <div>
+                <p class="text-center text-uppercase heading-b">
+                  Exercitation ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="separator-small"></div>
+                <p class="text-center">
+                  <a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter heading-b"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin heading-b"></i></a>
+                  <a target="_blank" href="https://plus.google.com/"><i class="fa fa-google-plus heading-b"></i></a>
+                  <a target="_blank" href="https://vimeo.com/"><i class="fa fa-vimeo-square heading-b"></i></a>
+                  <a target="_blank" href="https://www.tumblr.com/"><i class="fa fa-tumblr heading-b"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="caption">
+            <p>
+              <span class="title">Lynda Smith</span>
+              <br>
+              <span class="highlight">Programmer</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 % if show_homepage_promo_video:
   <section id="video-modal" class="modal home-page-video-modal video-modal">
