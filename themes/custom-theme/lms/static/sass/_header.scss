@@ -148,8 +148,11 @@
           }
 
           a {
-            color: theme-color("dark");
+            color: #baa769;
             font-weight: $font-weight-normal;
+            &:hover {
+              color:theme-color("dark");
+          }
           }
         }
 

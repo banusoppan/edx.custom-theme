@@ -935,3 +935,9 @@
   padding: $baseline;
   border-bottom: 1px solid $border-color-2;
 }
+.hover-effect{
+  color: #baa769 !important;
+  &:hover{
+    color : #000000 !important;
+  }
+}
