@@ -286,6 +286,7 @@
         transform: rotate(0deg);
         -webkit-transition: 0.25s ease-in-out;
         transition: 0.25s ease-in-out;
+        outline: none;
 
         &:nth-child(1) {
           top: 0;

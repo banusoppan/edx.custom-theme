@@ -24,3 +24,13 @@
 .icon-cc-zero::before { content: '\e808'; } /* '' */
 .icon-cc-share::before { content: '\e809'; } /* '' */
 .icon-cc-remix::before { content: '\e80a'; } /* '' */
+
+
+@font-face {
+  font-family: 'Domaine Display';
+  src: url('#{$static-path}/fonts/DomaineDisplay-Bold.otf') format("opentype");
+  
+  font-weight: normal;
+  font-style: normal;
+
+}

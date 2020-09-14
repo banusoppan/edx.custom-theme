@@ -17,12 +17,13 @@
     align-items: center;
     .banner-content {
         padding-left: 40px;
+        padding-right : 40px;
     }
 }
 
 .banner-header {
     
-    font-size: 25px;
+    
     font-weight: 400;
     color: #ffffff;
     font-family: 'Asap', sans-serif;
@@ -30,6 +31,9 @@
     font-family: Raleway,Arial,Helvetica,sans-serif;
     font-size:35px;
     line-height:35px;
+    @media (max-width: 1200px) and (min-width: 320px){
+      font-size: 24px !important;
+    }
 
     
 }
@@ -37,6 +41,9 @@
     font-family: "Domaine Display";
     color:#baa769;
     font-size : 70px !important;
+    @media (max-width: 1200px) and (min-width: 320px){
+      font-size: 50px !important;
+    }
 }
 
 .banner-text {
@@ -44,6 +51,9 @@
     font-size: 22px;
     padding: 15px 25px 30px 25px;
     border: 1px solid #baa769;
+    @media (max-width: 1200px) and (min-width: 320px){
+      font-size: 17px !important;
+    }
 }
 .secondary {
     @include float(right);
@@ -163,6 +173,11 @@
     margin: 0 auto!important;
     padding-top : 70px;
     padding-bottom: 70px;
+    padding-right: 15px;
+    padding-left:15px;
+    @media (max-width: 1200px) and (min-width: 320px){
+      width: 100vw !important;
+    }
 }
 .about-section,.service-section{
   .about-title,.service-title{
@@ -208,7 +223,7 @@
 
 }
 .work-section{
-  height: calc(100vh - 65px);
+  //height: calc(100vh - 65px);
   background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/shutterstock_740349664.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -382,4 +397,8 @@
   top: 50%;
   transform: translate(-50%,-50%);
   -webkit-transform : translate(-50%,-50%);
+}
+.row{
+  margin-right : 0px !important;
+  margin-left : 0px !important;
 }
