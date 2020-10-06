@@ -83,7 +83,7 @@
 
       &:hover,
       &:focus {
-        color: $body-color;
+        color: $white;
       }
     }
   }
@@ -748,7 +748,7 @@
       text-decoration: none;
       color: $m-gray;
       font-size: 18px;
-      margin-top: 9px;
+      //margin-top: 9px;
 
       &:hover,
       &:active,
@@ -938,6 +938,6 @@
 .hover-effect{
   color: #baa769 !important;
   &:hover{
-    color : #000000 !important;
+    color : #fff !important;
   }
 }

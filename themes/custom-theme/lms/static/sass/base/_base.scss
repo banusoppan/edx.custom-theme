@@ -11,7 +11,7 @@ body {
   font-size: 13px;
   font-style: normal;
   line-height: 22px;
-  color: #767676;
+  color: $white !important;
 }
 
 html {
@@ -21,6 +21,7 @@ html {
 
 body {
   background: $body-bg;
+  color : #fff !important;
 }
 
 // removing the outline on any element that we make programmatically focusable
@@ -34,13 +35,13 @@ h3,
 h4,
 h5,
 h6 {
-  color: $body-color;
+  color: #fff;
   font: normal 1.2em/1.2em $serif;
   margin: 0;
 }
 
 h1 {
-  color: $body-color;
+  color: #fff;
   font: normal 2em/1.4em $font-family-sans-serif;
   margin-bottom: ($baseline*1.5);
   text-align: center;
@@ -185,7 +186,7 @@ span.edx {
     list-style: disc;
 
     li {
-      color: $body-color;
+      color: #fff;
       font: normal 1em/1.4em $serif;
       margin: 0;
     }

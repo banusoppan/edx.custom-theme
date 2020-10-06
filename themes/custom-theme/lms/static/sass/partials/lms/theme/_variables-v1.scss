@@ -500,7 +500,7 @@ $course-card-height: ($baseline*18) !default;
 $course-image-height: ($baseline*8) !default;
 $course-info-height: ($baseline*10) !default;
 $course-title-height: ($baseline*3.6) !default;
-$homepage-bg-image: none !default;
+$homepage-bg-image: url('../images/Banner.jpg');
 $login-banner-image: url('#{$static-path}/images/edx-theme/edx-background-banner-account.png') !default;
 $register-banner-image: url('#{$static-path}/images/edx-theme/edx-background-banner-account.png') !default;
 $passwordreset-banner-image: url('#{$static-path}/images/edx-theme/edx-background-banner-account.png') !default;
@@ -508,7 +508,7 @@ $passwordreset-banner-image: url('#{$static-path}/images/edx-theme/edx-backgroun
 $video-thumb-url: '#{$static-path}/images/homepage-hero-video-thumb.jpg' !default;
 
 // dashboard elements
-$dashboard-profile-header-image: linear-gradient(-90deg, rgb(255, 255, 255), rgb(245, 245, 245)) !default;
+$dashboard-profile-header-image: linear-gradient(-90deg, rgb(255, 255, 255), rgb(231, 46, 46)) !default;
 $dashboard-profile-header-color: transparent !default;
 $dashboard-profile-color: rgb(252, 252, 252) !default;
 $dot-color: rgb(221, 221, 221) !default;

@@ -25,7 +25,7 @@
     table-layout: fixed;
     width: 100%;
     border: 1px solid $border-color-2;
-    background: $container-bg;
+    //background: $container-bg;
     box-shadow: 0 1px 2px $shadow-l2;
 
     @extend %ui-print-excluded;
@@ -39,10 +39,12 @@
 body {
   min-height: 100%;
   background-color: $course-bg-color;
+  
 }
 
 body, h1, h2, h3, h4, h5, h6, p, label {
   @include text-align(left);
+  color: #fff !important;
 
   font-family: $font-family-sans-serif;
 }

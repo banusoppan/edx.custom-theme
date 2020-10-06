@@ -184,7 +184,7 @@
   h3 {
     font-size: font-size(large);
     font-weight: $font-bold;
-    color: $black;
+    color: #fff !important;
   }
 
   img {
@@ -353,12 +353,12 @@
           .subsection-text {
             .details {
               font-size: $body-font-size;
-              color: theme-color("secondary");
+              color: #fff;
               margin-left: 34px;
             }
 
             .prerequisite {
-              color: theme-color("secondary");
+              color: #fff;
               font-weight: $font-bold;
             }
           }
@@ -422,6 +422,8 @@ button.accordion-trigger, button.prerequisite-button {
   margin: 0;
   background: none;
   cursor: pointer;
+  color : #fff !important;
+
 
   .fa {
     color: $blue;
@@ -430,8 +432,8 @@ button.accordion-trigger, button.prerequisite-button {
 
 #expand-collapse-outline-all-button {
   float: right;
-  background-color: $white;
-  color: $black;
+  //background-color: $white;
+  //color: $black;
   cursor: pointer;
 }
 
@@ -466,7 +468,7 @@ button.accordion-trigger, button.prerequisite-button {
       font: -apple-system-body;
       line-height: 1;
       font-weight: $font-bold;
-      color: theme-color("dark");
+      color: #fff !important;
     }
 
     .description {
@@ -485,7 +487,7 @@ button.accordion-trigger, button.prerequisite-button {
     }
 
     .date {
-      color: theme-color("dark");
+      color: #ffffff !important;
       font: -apple-system-body;
     }
 

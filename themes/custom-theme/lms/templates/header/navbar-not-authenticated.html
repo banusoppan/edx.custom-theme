@@ -54,16 +54,22 @@ from six import text_type
           </div>
         % else:
           <div class="mobile-nav-item hidden-mobile nav-item">
-            <a href="#home" class="hover-effect">HOME</a>
+            <a href="https://themastersworld.com/#home" data-id="home" class="hover-effect">HOME</a>
           </div>
           <div class="mobile-nav-item hidden-mobile nav-item">
-            <a href="#about" class="hover-effect">ABOUT</a>
+            <a href="https://themastersworld.com/#about"  data-id="about" class="hover-effect">ABOUT</a>
           </div>
           <div class="mobile-nav-item hidden-mobile nav-item">
-            <a href="#team" class="hover-effect">TEAM</a>
+            <a href="https://themastersworld.com/#team" data-id="team" class="hover-effect">TEAM</a>
           </div>
           <div class="mobile-nav-item hidden-mobile nav-item">
-            <a href="#service" class="hover-effect">SERVICE</a>
+            <a href="https://themastersworld.com/#service" data-id="service" class="hover-effect">SERVICE</a>
+          </div>
+          <div class="mobile-nav-item hidden-mobile nav-item">
+            <a href="https://themastersworld.com/#process" data-id="process" class="hover-effect">PROCESS</a>
+          </div>
+          <div class="mobile-nav-item hidden-mobile nav-item">
+            <a href="https://themastersworld.com/#contact" data-id="contact" class="hover-effect">CONTACT</a>
           </div>
           % if allow_public_account_creation:
             <div class="mobile-nav-item hidden-mobile nav-item">
@@ -78,3 +84,39 @@ from six import text_type
     </div>
   </div>
 </nav>
+<script>
+  $(document).ready(function () {
+  // Read the cookie and if it's defined scroll to id
+      var scroll = $.cookie('scroll');
+      if(scroll){
+          scrollToID(scroll, 1000);
+          $.removeCookie('scroll');
+      }
+
+      // Handle event onclick, setting the cookie when the href != #
+      $('.nav-item a').click(function (e) {
+          e.preventDefault();
+          var id = $(this).data('id');
+          var href = $(this).attr('href');
+          
+          if(href === '#'){
+              scrollToID(id, 1000);
+          }else{
+              
+              $.cookie('scroll', id);
+              window.location.href = href;
+          }
+      });
+
+      // scrollToID function
+      function scrollToID(id, speed) {
+          var offSet = 70;
+          var obj = $('#' + id);
+          if(obj.length){
+            var offs = obj.offset();
+            var targetOffset = offs.top - offSet;
+            $('html,body').animate({ scrollTop: targetOffset }, speed);
+          }
+      }
+  });
+</script>

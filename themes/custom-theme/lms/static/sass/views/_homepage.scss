@@ -89,7 +89,7 @@ $learn-more-horizontal-position: calc(50% - 100px); // calculate the left positi
         .course-organization, .course-code, .course-date {
           @extend %t-icon6;
 
-          color: $gray-d2;
+          color: $white;
         }
 
         .course-organization, .course-code, .course-title {

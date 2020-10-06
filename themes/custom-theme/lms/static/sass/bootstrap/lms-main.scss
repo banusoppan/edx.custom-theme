@@ -20,7 +20,7 @@ $static-path: '../..';
 
 // Features
 @import 'features/bookmarks';
-@import 'features/course-experience';
+@import '../../sass/features/course-experience';
 @import 'features/course-search';
 @import 'features/course-sock';
 @import 'features/course-upgrade-message';

@@ -15,7 +15,7 @@
   }
 
   .login-register.border-left {
-    border-left: 1px solid #d9d9d9;
+    border-left: 1px solid #baa769;
     padding-left: ($baseline*1.5);
     padding-right: $baseline;
     margin-left: 0;
@@ -62,7 +62,7 @@
   width: 100%;
   justify-content: center;
   margin-top: $baseline;
-  background: $white;
+  background: $black;
   display: flex;
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
@@ -99,7 +99,7 @@
 .login-register {
   $grid-columns: 12;
 
-  background: $white;
+  background: $black;
   min-height: 100%;
   margin: 0 auto;
   padding-left: ($baseline/2);
@@ -312,6 +312,7 @@
     select,
     textarea,
     .plaintext-field {
+      
       height: auto;
       line-height: 1.5em;
       border-radius: 0;
@@ -347,7 +348,7 @@
     label {
       display: block;
       margin: 0;
-      color: $black;
+      color: $white;
 
       &.inline {
         display: inline;
@@ -558,8 +559,8 @@
 
     &.button-oa2-google-oauth2 {
       color: white;
-      border-color: $google-blue;
-      background-color: $google-blue;
+      border-color: #baa769;
+      background-color: #baa769;
 
       .icon {
         background: transparent;
@@ -710,9 +711,7 @@
       color: shade($red, 10%) !important;
     }
 
-    .message-copy {
-
-    }
+    
   }
 
   .submission-success {
@@ -724,9 +723,7 @@
       color: shade($green, 10%) !important;
     }
 
-    .message-copy {
-
-    }
+   
   }
 
   .institution-list {
@@ -890,4 +887,9 @@
 body.open-modal {
   overflow: hidden;
 }
-
+input{
+  color: #fff;
+}
+select{
+  background: grey;
+}

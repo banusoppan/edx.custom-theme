@@ -181,14 +181,14 @@
 }
 .about-section,.service-section,.process-section{
   .about-title,.service-title,.process-title{
-      color: #434343;
+      //color: #434343;
       text-align : center;
       font-weight: 700;
       font-size: 70px;
       line-height: 84px;
   }
   .title-para{
-      color: #434343;
+      //color: #434343;
       letter-spacing: 2px;
       margin-top: -10px;
       margin-bottom: 30px;
@@ -197,7 +197,7 @@
       font-weight: 700;
   }
   .col-icon{
-    color: #434343;
+    //color: #434343;
     font-size: 48px;
     float: left;
     padding: 20px 10px;
@@ -219,6 +219,7 @@
   }
   .list-head{
     border-top : 2px solid #baa769;
+    color: #baa769;
   }
 
 }
@@ -261,6 +262,7 @@
       transition: all .3s;
       text-decoration: none;
       outline: 0;
+      color: #baa769;
     }
     .circle:after {
       position: absolute;
@@ -287,6 +289,9 @@
       animation-duration: 1.2s;
 
     }
+    .title{
+      color: #baa769;
+    }
       
       
   }
@@ -294,14 +299,14 @@
 }
 .team-section{
   .team-title{
-    color: #434343;
+    //color: #434343;
     text-align : center;
     font-weight: 700;
     font-size: 70px;
     line-height: 84px;
   }
   .title-para{
-    color: #434343;
+   // color: #434343;
     letter-spacing: 2px;
     margin-top: -10px;
     margin-bottom: 30px;
@@ -321,8 +326,9 @@
       transition: all .5s ease 0s;
     }
     .fluid-width {
+      object-fit: cover;
       width: 100%;
-      height: auto;
+      height: 320px;
     }
     .overlay{
       -webkit-transition: all .5s ease 0s;
@@ -438,9 +444,10 @@
     position: relative;
     padding-bottom: 20px;
     .title{
+
       margin-top: 15px;
       margin-bottom: 15px;
-      color: #434343;
+      color: #baa769 !important;
       text-align: center;
       text-transform: uppercase;
       margin-top: 0;
@@ -508,8 +515,8 @@
   //background-attachment: fixed;
   display: flex;
   align-items: center;
-  padding-top : 100px;
-  padding-bottom : 100px;
+  padding-top : 150px;
+  padding-bottom : 150px;
   .contact-title{
     color: #fff;
     text-align : center;
@@ -531,4 +538,99 @@
     color : #0e0e0f!important;
   }
 
+}
+.number-section{
+
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/shutterstock_740349664.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  //background-color: rgba(0,0,0,.85);
+  display: flex;
+  align-items: center;
+  color: #efefef;
+  padding-top:100px;
+  padding-bottom: 100px;
+  
+    //padding-left: 40px;
+    .number-title{
+      
+      color: #efefef;
+      text-align : center;
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 84px;
+      
+    }
+    .title-para{
+      color: #efefef;
+      letter-spacing: 2px;
+      margin-top: -10px;
+      margin-bottom: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .counters {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      .counter {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 28px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        .count {
+          font-size: 45px;
+          line-height: 78px;
+          font-weight: 600;
+        }
+      }
+      
+    }
+    .background-25-b {
+      background-color: rgba(97,94,90,.25)!important;
+    }
+    .heading{
+      color: #fff;
+    }
+    .background-10-light {
+      background-color: rgba(255,255,255,.1)!important;
+    }
+    .background-35-h {
+      background-color: rgba(14,14,15,.35)!important;
+    }
+    caption {
+      letter-spacing: 1px;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+}
+.course-btn{
+  background-color: theme-color("primary");
+  color: theme-color("inverse");
+  border: 1px solid theme-color("inverse");
+  font-weight: $font-weight-normal;
+  padding: $baseline/4 $baseline;
+  margin:auto;
+  display:block;
+
+  &:hover {
+    background-color: theme-color("inverse");
+    color: theme-color("primary");
+    border-color: theme-color("primary");
+    background-position : 0px 36px;
+  }
+  
+}
+#text1,#text2,#text3,#text4,#course-intro{
+  display:none;
+}
+.btn-container{
+  color : #baa769;
+  padding-bottom: 30px;
+  
 }
