@@ -1,0 +1,164 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("About")}</%block>
+<head>
+    <!-- McDaniel Oct-2018: add the Bootstrap library, unless it's already included from webpack -->
+    % if not uses_bootstrap:
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    % endif
+  
+</head>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="about-banner-section">
+        <div class="row">
+            <div class="col-12 col-md-4 about-banner-content">
+                <div class="">
+                    <h1>INSIGHT TO GROW.</h1>
+                    <h5>Mission Critical Business Insights in rapidly changing
+                        world through world class suject matter experts</h5>
+                    <div class="btn-container mt-5 mb-5">
+                        <button class="btn btn-warning">UPCOMING COURSES</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-8 video-col">
+                <div class="video-wrap">
+           
+                    <video src="design-thinking-final.mp4" loop
+                    muted
+                    autoplay
+                    preload="auto">
+                    </video>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+   <!--<section class="about-category-section">
+        <div class="container">
+            <h2>TOP CATEGORY</h2>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="design.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Design</h5>
+                        
+                      </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="development.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Development</h5>
+                        
+                      </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="music.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Music</h5>
+                        
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about-faq">
+        <div class="container">
+            <h2>FAQ</h2>
+            <button class="accordion">Section 1</button>
+            <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="accordion">Section 2</button>
+            <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="accordion">Section 3</button>
+            <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+
+        </div>
+    </section> 
+    <section class="about-teaching-section">
+        <div class="udlite-full-width-container non-student-cta-wrapper">
+            <div class="non-student-cta-bg" data-purpose="non-student-cta">
+                <div class="non-student-cta-content-wrapper">
+                    <img src="https://s.udemycdn.com/home/non-student-cta/udlite-lohp-promo-teacher.jpg" class="non-student-cta-image d-none d-xl-block" alt="non student cta image" width="320" height="320">
+                    <div class="non-student-cta">
+                        <h3 class="udlite-heading-xxl non-student-cta__header">Become an instructor</h3>
+                        <p class="udlite-text-md non-student-cta__content">
+                            Top instructors from around the world teach millions of students on MastersWorld. We provide the tools and skills to teach what you love.
+                        </p>
+                        <div class="btn-container mt-5 mb-5">
+                            <button class="btn btn-warning">START TEACHING TODAY</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="about-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 " style="text-align: left;">
+                    <a class="" href="#">
+                        <img src="logo.png" height="30" class="d-inline-block align-top" alt="">
+                    </a>
+                    <p>&#169;2020.All Rights Reserved. </p>
+
+                </div>
+                <div class="col-12 col-md-4 " style="text-align: left;">
+                    <ul>
+                        <li class="mb-2">
+                            <a href="#" ><i class="fa fa-facebook-square mr-2"></i>  Facebook</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" ><i class="fa fa-instagram mr-2"></i>  Instagram</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" ><i class="fa fa-twitter-square mr-2"></i> Twitter</a>
+                        </li>
+                        <li class="mb-2"> 
+                            <a href="#" ><i class="fa fa-linkedin mr-2"></i>  LinkedIN</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" ><i class="fa fa-youtube mr-2"></i>  YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <ul style="text-align: left;">
+                        <li class="mb-2">Privacy</li>
+                        <li class="mb-2">Terms</li>
+                        <li class="mb-2">About</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>--> 
+</main>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+</script>

@@ -34,7 +34,11 @@ from pipeline_mako import render_require_js_path_overrides
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />-->
     <link rel="stylesheet" href="${static.url('css/animate.css')}" />
+    <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
 
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+  
 ## Define a couple of helper functions to make life easier when
 ## embedding theme conditionals into templates. All inheriting
 ## templates have access to these functions, and we can import these
@@ -213,7 +217,7 @@ from pipeline_mako import render_require_js_path_overrides
   <script type="text/javascript" src="${static.url('js/utils/navigation.js')}" charset="utf-8"></script>
   <script type="text/javascript" src="${static.url('js/header/header.js')}"></script>
   <script data-require="jquery-cookie@1.3.1" data-semver="1.3.1" src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.3.1/jquery.cookie.js"></script>
-  
+  <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
   <%static:optional_include_mako file="body-extra.html" is_theming_enabled="True" />
 </body>
 </html>
